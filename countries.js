@@ -12,11 +12,12 @@ const displayCountries = countries =>{
     console.log(countryHTML)
     }
     const getCountryHTML = country =>{
+        const {name,capital,flag} = country;
         return `
         <div class="country">
-        <h2>${country.name}</h2>
-        <h4>Capial:${country.capital}</h4>
-        <img src="${country.flag}">
+        <h2>${name}</h2>
+        <h4>Capial:${capital}</h4>
+        <img src="${flag}">
         </div>
         `
 }
